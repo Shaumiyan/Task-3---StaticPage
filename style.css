@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.theme-toggle {
+  margin-top: 1rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background: #f4f4f4;
+}
+
+.hero-image {
+  max-width: 300%;
+  height: auto;
+}
+
+.faq {
+  padding: 2rem;
+  background: #eee;
+}
+
+.faq-question {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  display: none;
+  padding: 0.5rem;
+  background: white;
+}
+
+.faq-answer.active {
+  display: block;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  display: none;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #121212;
+  color: #f4f4f4;
+}
+
+.dark-mode .navbar {
+  background: #1e1e1e;
+}
+
+.dark-mode .faq {
+  background: #1e1e1e;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
