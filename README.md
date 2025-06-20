@@ -1,4 +1,4 @@
-﻿# Task-3---StaticPage
+﻿
 # Interactive Landing Page – Task 3
 
 This project adds interactivity to a static landing page using **HTML**, **CSS**, and **JavaScript**. It simulates real-world frontend work by enhancing user experience with dynamic features.
